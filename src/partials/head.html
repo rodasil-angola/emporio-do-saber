@@ -1,0 +1,52 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <link rel="canonical" href="{{CANONICAL}}">
+  <meta name="theme-color" content="#1f2a6d">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_AO">
+  <meta property="og:site_name" content="Empório do Saber — Centro Infantil">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="{{ROOT}}assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="{{ROOT}}assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;0,800;0,900;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ROOT}}assets/css/tokens.css">
+  <link rel="stylesheet" href="{{ROOT}}assets/css/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Empório do Saber — Centro Infantil",
+    "alternateName": "Empório do Saber",
+    "slogan": "O fruto do nosso trabalho colhemos por toda a vida.",
+    "url": "{{SITE_URL}}/",
+    "logo": "{{SITE_URL}}/assets/img/logo.png",
+    "image": "{{SITE_URL}}/assets/img/fachada-frontal.jpg",
+    "telephone": "+244942783050",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bairro Social da Juventude",
+      "addressCountry": "AO"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "15:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
+    ]
+  }
+  </script>
+  {{EXTRA_HEAD}}
+  <script defer src="{{ROOT}}assets/js/site.js"></script>
+</head>

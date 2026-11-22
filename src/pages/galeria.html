@@ -1,0 +1,62 @@
+<!-- {
+  "slug": "galeria",
+  "nav": "galeria",
+  "title": "Galeria | Empório do Saber — Centro Infantil",
+  "description": "Fotografias do Empório do Saber: alunos, salas de aula, atividades e instalações da escola.",
+  "ogImage": "alunos-celebracao.jpg"
+} -->
+
+<section class="rd-page-hero">
+  <div class="rd-page-hero__media"><img src="{{ROOT}}assets/img/turma-professor.jpg" alt="" width="1400" height="933"></div>
+  <div class="rd-container">
+    <nav class="rd-breadcrumb" aria-label="Caminho"><a href="{{ROOT}}">Início</a> / Galeria</nav>
+    <h1>Pequenos passos, grandes conquistas.</h1>
+    <p>Os nossos alunos, as salas e o dia a dia da escola.</p>
+  </div>
+  <div class="rd-stripe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</section>
+
+<!-- COMPONENTE: GalleryGrid
+     Para acrescentar uma fotografia: copiar um <button class="rd-gallery__item">, trocar o src, o alt,
+     a legenda e o data-cat (alunos | salas | instalacoes). -->
+<section class="rd-section" aria-label="Galeria de fotografias">
+  <div class="rd-container">
+    <div class="rd-gallery-filters" role="group" aria-label="Filtrar fotografias">
+      <button type="button" data-filter="todas" aria-pressed="true">Todas</button>
+      <button type="button" data-filter="alunos" aria-pressed="false">Alunos e atividades</button>
+      <button type="button" data-filter="salas" aria-pressed="false">Salas de aula</button>
+      <button type="button" data-filter="instalacoes" aria-pressed="false">Instalações</button>
+    </div>
+
+    <div class="rd-gallery">
+      <button type="button" class="rd-gallery__item" data-cat="alunos"><img src="{{ROOT}}assets/img/alunos-celebracao.jpg" alt="Alunos de uniforme de braços no ar no salão da escola" loading="lazy" width="1400" height="933"><figcaption>Alunos no salão da escola</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="alunos"><img src="{{ROOT}}assets/img/aluna-sala-aula.jpg" alt="Aluna sorridente na carteira durante a aula" loading="lazy" width="933" height="1400"><figcaption>Em sala de aula</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="salas"><img src="{{ROOT}}assets/img/sala-pre-escolar-cores.jpg" alt="Sala do Pré-escolar com mesas coloridas" loading="lazy" width="1400" height="1050"><figcaption>Sala do Pré-escolar</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="alunos"><img src="{{ROOT}}assets/img/turma-professor.jpg" alt="Turma a celebrar com o professor" loading="lazy" width="1400" height="933"><figcaption>Turma com o professor</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="instalacoes"><img src="{{ROOT}}assets/img/fachada-frontal.jpg" alt="Fachada do Empório do Saber" loading="lazy" width="1400" height="933"><figcaption>A fachada da escola</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="alunos"><img src="{{ROOT}}assets/img/professora-acompanha-aluno.jpg" alt="Professora ajuda um aluno a escrever" loading="lazy" width="933" height="1400"><figcaption>Acompanhamento individual</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="salas"><img src="{{ROOT}}assets/img/sala-primario.jpg" alt="Sala de aula com carteiras e exercícios de matemática nas paredes" loading="lazy" width="1400" height="1050"><figcaption>Sala de aula</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="alunos"><img src="{{ROOT}}assets/img/alunos-grupo.jpg" alt="Grupo de alunos com balões coloridos" loading="lazy" width="1400" height="933"><figcaption>Dia de festa</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="alunos"><img src="{{ROOT}}assets/img/aluna-professora-leitura.jpg" alt="Professora abraça uma aluna durante a leitura" loading="lazy" width="933" height="1400"><figcaption>Hora da leitura</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="salas"><img src="{{ROOT}}assets/img/sala-pre-escolar.jpg" alt="Sala do Pré-escolar com mesas verdes, azuis e amarelas" loading="lazy" width="1400" height="1050"><figcaption>Mesas à medida dos mais pequenos</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="instalacoes"><img src="{{ROOT}}assets/img/edificio-perspectiva.jpg" alt="Edifício da escola visto em perspetiva" loading="lazy" width="1400" height="933"><figcaption>O edifício</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="alunos"><img src="{{ROOT}}assets/img/criancas-atividade.jpg" alt="Crianças numa atividade com as educadoras" loading="lazy" width="933" height="1400"><figcaption>Atividade com as educadoras</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="salas"><img src="{{ROOT}}assets/img/estante-material.jpg" alt="Estante com jogos, livros e material didático" loading="lazy" width="1400" height="1050"><figcaption>Jogos e material didático</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="salas"><img src="{{ROOT}}assets/img/sala-secundario.jpg" alt="Sala de aula com ecrã e secretária do professor" loading="lazy" width="1400" height="1050"><figcaption>Sala com ecrã</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="instalacoes"><img src="{{ROOT}}assets/img/evento-encarregados.jpg" alt="Salão da escola cheio de encarregados de educação durante um evento" loading="lazy" width="1400" height="933"><figcaption>Encontro com as famílias</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="salas"><img src="{{ROOT}}assets/img/sala-quadro.jpg" alt="Sala com quadro branco e mesas coloridas" loading="lazy" width="1400" height="1050"><figcaption>Quadro e mesas</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="instalacoes"><img src="{{ROOT}}assets/img/edificio-lateral.jpg" alt="Lateral do edifício com as faixas coloridas" loading="lazy" width="1400" height="933"><figcaption>Vista lateral</figcaption></button>
+      <button type="button" class="rd-gallery__item" data-cat="salas"><img src="{{ROOT}}assets/img/sala-tv.jpg" alt="Sala de aula decorada com balões" loading="lazy" width="1400" height="1050"><figcaption>Sala pronta para receber os alunos</figcaption></button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="rd-lightbox" role="dialog" aria-modal="true" aria-label="Fotografia ampliada">
+  <button class="rd-lightbox__close" type="button" aria-label="Fechar">{{icon:close}}</button>
+  <button class="rd-lightbox__prev" type="button" aria-label="Fotografia anterior">{{icon:chevron-left}}</button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+  <button class="rd-lightbox__next" type="button" aria-label="Fotografia seguinte">{{icon:chevron-right}}</button>
+</div>
+
+{{include:cta-final}}

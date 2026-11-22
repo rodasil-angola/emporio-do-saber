@@ -1,0 +1,75 @@
+<!-- {
+  "slug": "contactos",
+  "nav": "contactos",
+  "title": "Contactos e localização | Empório do Saber — Centro Infantil",
+  "description": "Contacte o Empório do Saber pelo +244 942 783 050 (telefone e WhatsApp). Bairro Social da Juventude. Atendimento de segunda a sexta, 08h00–15h00, e sábado, 08h00–12h00.",
+  "ogImage": "fachada-frontal.jpg"
+} -->
+
+<section class="rd-page-hero">
+  <div class="rd-page-hero__media"><img src="{{ROOT}}assets/img/fachada-entrada.jpg" alt="" width="1400" height="933"></div>
+  <div class="rd-container">
+    <nav class="rd-breadcrumb" aria-label="Caminho"><a href="{{ROOT}}">Início</a> / Contactos</nav>
+    <h1>Estamos disponíveis para receber a sua família.</h1>
+    <p>Ligue, escreva pelo WhatsApp ou venha conhecer a escola no horário de atendimento.</p>
+  </div>
+  <div class="rd-stripe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</section>
+
+<section class="rd-section rd-section--alt" aria-label="Contactos">
+  <div class="rd-container rd-contact-grid">
+    <!-- COMPONENTE: ContactCard -->
+    <div class="rd-contact-card rd-reveal">
+      <h2>Fale connosco</h2>
+      <div class="rd-contact-line">
+        <span class="rd-contact-line__icon">{{icon:pin}}</span>
+        <div><div class="rd-contact-line__label">Endereço</div><div class="rd-contact-line__value">Bairro Social da Juventude</div></div>
+      </div>
+      <div class="rd-contact-line">
+        <span class="rd-contact-line__icon">{{icon:phone}}</span>
+        <div><div class="rd-contact-line__label">Telefone e WhatsApp</div><div class="rd-contact-line__value"><a href="tel:+244942783050">+244 942 783 050</a></div></div>
+      </div>
+      <div class="rd-btn-row" style="margin-top:22px">
+        <a class="rd-btn rd-btn--navy" href="tel:+244942783050">{{icon:phone}} Ligar agora</a>
+        <a class="rd-btn rd-btn--wa" href="#" data-wa="Olá! Gostaria de obter informações sobre as matrículas e os serviços do Empório do Saber.">{{icon:whatsapp}} Falar pelo WhatsApp</a>
+      </div>
+      <div class="rd-transport" style="margin:28px 0 0">
+        <div class="rd-transport__icon">{{icon:no-bus}}</div>
+        <div><strong>Não dispomos de transporte escolar.</strong><p>A instituição não oferece serviço de transporte.</p></div>
+      </div>
+    </div>
+
+    <!-- COMPONENTE: OpeningHours -->
+    <div class="rd-reveal" data-delay="2">
+      <div class="rd-hours">
+        <h3>{{icon:clock}} Horário de atendimento</h3>
+        <div class="rd-hours__row"><span class="rd-hours__day">Segunda a sexta-feira</span><span class="rd-hours__time">08h00 — 15h00</span></div>
+        <div class="rd-hours__row"><span class="rd-hours__day">Sábado</span><span class="rd-hours__time">08h00 — 12h00</span></div>
+      </div>
+      <a class="rd-btn rd-btn--primary rd-btn--block" href="{{ROOT}}pre-inscricao/" style="margin-top:20px">Fazer pré-inscrição</a>
+    </div>
+  </div>
+</section>
+
+<section class="rd-section" aria-labelledby="mapa-titulo">
+  <div class="rd-container">
+    <div class="rd-section-header rd-reveal">
+      <span class="rd-eyebrow">Localização</span>
+      <h2 id="mapa-titulo">Onde estamos.</h2>
+    </div>
+    <!-- MAPA: para integrar o Google Maps, colar aqui o <iframe> de incorporação
+         (Google Maps → Partilhar → Incorporar um mapa) dentro de .rd-map e apagar o conteúdo provisório. -->
+    <div class="rd-map rd-reveal" id="mapa">
+      <div>
+        <div class="rd-map__pin">{{icon:pin}}</div>
+        <strong>Bairro Social da Juventude</strong>
+        <p>Mapa interativo em breve. Para indicações, ligue ou escreva pelo WhatsApp.</p>
+        <div class="rd-btn-row" style="justify-content:center;margin-top:18px">
+          <a class="rd-btn rd-btn--wa" href="#" data-wa="Olá! Podem indicar-me como chegar ao Empório do Saber?">{{icon:whatsapp}} Pedir indicações</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{include:cta-final}}

@@ -1,0 +1,47 @@
+/*
+  Empório do Saber — Centro Infantil
+  Tokens de design (padrão Rodasil Hybrid Sites)
+  ------------------------------------------------
+  Cores retiradas do logótipo oficial (azul-marinho, azul, vermelho)
+  e do amarelo das faixas da fachada da escola.
+  Colar também em Aparência → Personalizar → CSS Adicional no WordPress,
+  para que menu, formulários e blocos nativos sigam a mesma paleta.
+*/
+:root {
+  /* Marca */
+  --rd-cor-primaria: #1f2a6d;      /* azul-marinho do anel do logótipo */
+  --rd-cor-primaria-escura: #141c4d;
+  --rd-cor-secundaria: #2f6fd0;    /* azul do livro */
+  --rd-cor-secundaria-clara: #e8f0fc;
+  --rd-cor-destaque: #d4262e;      /* vermelho do livro */
+  --rd-cor-destaque-clara: #fdecec;
+  --rd-cor-amarelo: #f4c84a;       /* faixas da fachada */
+  --rd-cor-amarelo-claro: #fff6da;
+  --rd-cor-verde: #4f9e7d;         /* uso pontual (sucesso) */
+
+  /* Neutros */
+  --rd-cor-texto: #232a3d;
+  --rd-cor-texto-claro: #5b6478;
+  --rd-cor-fundo: #ffffff;
+  --rd-cor-fundo-alt: #f5f7fb;
+  --rd-cor-linha: #e3e7f0;
+
+  /* Tipografia */
+  --rd-fonte-titulo: "Nunito", "Segoe UI", system-ui, sans-serif;
+  --rd-fonte-corpo: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+
+  /* Espaçamento */
+  --rd-espaco-xs: 8px;
+  --rd-espaco-sm: 16px;
+  --rd-espaco-md: 24px;
+  --rd-espaco-lg: 48px;
+  --rd-espaco-xl: clamp(64px, 9vw, 112px);
+
+  /* Forma */
+  --rd-raio-borda: 18px;
+  --rd-raio-pequeno: 10px;
+  --rd-sombra-suave: 0 2px 6px rgba(20, 28, 77, .06), 0 12px 32px rgba(20, 28, 77, .08);
+  --rd-sombra-forte: 0 18px 50px rgba(20, 28, 77, .18);
+
+  --rd-largura: 1200px;
+}

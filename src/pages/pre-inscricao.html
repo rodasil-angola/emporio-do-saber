@@ -1,0 +1,138 @@
+<!-- {
+  "slug": "pre-inscricao",
+  "nav": "",
+  "title": "Pré-inscrição 2026/2027 | Empório do Saber — Centro Infantil",
+  "description": "Faça a pré-inscrição do seu educando no Empório do Saber para o ano lectivo 2026/2027: Pré-escolar, Ensino Primário, 7.ª e 8.ª Classe.",
+  "ogImage": "aluna-sala-aula.jpg"
+} -->
+
+<section class="rd-page-hero">
+  <div class="rd-page-hero__media"><img src="{{ROOT}}assets/img/aluna-sala-aula.jpg" alt="" width="933" height="1400" style="object-position:center 25%"></div>
+  <div class="rd-container">
+    <nav class="rd-breadcrumb" aria-label="Caminho"><a href="{{ROOT}}">Início</a> / Pré-inscrição</nav>
+    <h1>Dê o primeiro passo para o futuro do seu educando.</h1>
+    <p>Preencha os dados e manifeste o seu interesse numa vaga no Empório do Saber.</p>
+  </div>
+  <div class="rd-stripe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</section>
+
+<section class="rd-section rd-section--alt" aria-label="Formulário de pré-inscrição">
+  <div class="rd-container rd-form-wrap">
+    <div>
+      <!-- COMPONENTE: PreRegistrationForm
+           Fase atual: só frontend. Nada é enviado para um servidor.
+           Integração futura: substituir por Fluent Forms / WPForms mantendo os mesmos "name" dos campos. -->
+      <form class="rd-form" id="rd-pre-inscricao" novalidate>
+        <fieldset>
+          <legend><span>1</span>Dados do aluno</legend>
+          <div class="rd-field">
+            <label for="nome_aluno">Nome completo do aluno <span class="rd-req">*</span></label>
+            <input id="nome_aluno" name="nome_aluno" type="text" autocomplete="off" required>
+            <span class="rd-field__error">Indique o nome completo do aluno.</span>
+          </div>
+          <div class="rd-field">
+            <label for="data_nascimento">Data de nascimento <span class="rd-req">*</span></label>
+            <input id="data_nascimento" name="data_nascimento" type="date" required>
+            <span class="rd-field__error">Indique uma data de nascimento válida.</span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span>2</span>Encarregado de educação</legend>
+          <div class="rd-field">
+            <label for="nome_encarregado">Nome do encarregado de educação <span class="rd-req">*</span></label>
+            <input id="nome_encarregado" name="nome_encarregado" type="text" autocomplete="name" required>
+            <span class="rd-field__error">Indique o nome do encarregado de educação.</span>
+          </div>
+          <div class="rd-form__row rd-form__row--2">
+            <div class="rd-field">
+              <label for="telefone">Número de telefone <span class="rd-req">*</span></label>
+              <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="9XX XXX XXX" required>
+              <span class="rd-field__error">Indique um número de telefone válido.</span>
+            </div>
+            <div class="rd-field">
+              <label for="whatsapp">WhatsApp <span class="rd-req">*</span></label>
+              <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" placeholder="9XX XXX XXX" required>
+              <span class="rd-field__error">Indique o número de WhatsApp.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span>3</span>Inscrição</legend>
+          <div class="rd-field" data-required>
+            <span class="rd-field__label" id="lbl-nivel">Nível de ensino pretendido <span class="rd-req">*</span></span>
+            <div class="rd-choices rd-choices--4" role="radiogroup" aria-labelledby="lbl-nivel">
+              <label class="rd-choice"><input type="radio" name="nivel" value="pre-escolar" data-label="Pré-escolar"><span>Pré-escolar</span></label>
+              <label class="rd-choice"><input type="radio" name="nivel" value="primario" data-label="Ensino Primário"><span>Ensino Primário</span></label>
+              <label class="rd-choice"><input type="radio" name="nivel" value="7-classe" data-label="7.ª Classe"><span>7.ª Classe</span></label>
+              <label class="rd-choice"><input type="radio" name="nivel" value="8-classe" data-label="8.ª Classe"><span>8.ª Classe</span></label>
+            </div>
+            <span class="rd-field__error">Escolha o nível de ensino.</span>
+          </div>
+          <div class="rd-field" data-required>
+            <span class="rd-field__label" id="lbl-tipo">Aluno <span class="rd-req">*</span></span>
+            <div class="rd-choices rd-choices--2" role="radiogroup" aria-labelledby="lbl-tipo">
+              <label class="rd-choice"><input type="radio" name="tipo_aluno" value="novo" data-label="Novo aluno"><span>Novo aluno</span></label>
+              <label class="rd-choice"><input type="radio" name="tipo_aluno" value="reconfirmacao" data-label="Aluno em reconfirmação"><span>Aluno em reconfirmação</span></label>
+            </div>
+            <span class="rd-field__error">Indique se é um novo aluno ou uma reconfirmação.</span>
+          </div>
+          <div class="rd-field" data-required>
+            <span class="rd-field__label" id="lbl-codigo">Possui código promocional? <span class="rd-req">*</span></span>
+            <div class="rd-choices rd-choices--2" role="radiogroup" aria-labelledby="lbl-codigo">
+              <label class="rd-choice"><input type="radio" name="tem_codigo" value="sim"><span>Sim</span></label>
+              <label class="rd-choice"><input type="radio" name="tem_codigo" value="nao"><span>Não</span></label>
+            </div>
+            <span class="rd-field__error">Responda se possui código promocional.</span>
+          </div>
+          <div class="rd-promo-field" aria-hidden="true">
+            <div>
+              <div class="rd-field">
+                <label for="codigo_promocional">Código promocional <span class="rd-req">*</span></label>
+                <input id="codigo_promocional" name="codigo_promocional" type="text" autocomplete="off" tabindex="-1" style="text-transform:uppercase">
+                <span class="rd-field__hint">O código é apresentado no ato da inscrição para o desconto de 5.000 Kz (alunos novos).</span>
+                <span class="rd-field__error">Indique o código promocional.</span>
+              </div>
+            </div>
+          </div>
+          <p class="rd-field__hint" style="margin:-6px 0 18px">Ainda não tem código? <a href="#" data-wa="Olá! Gostaria de solicitar o código promocional para a matrícula de um novo aluno no Empório do Saber.">Peça pelo WhatsApp</a>.</p>
+          <div class="rd-field">
+            <label for="mensagem">Mensagem adicional</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma informação que queira partilhar connosco"></textarea>
+          </div>
+        </fieldset>
+
+        <button class="rd-btn rd-btn--primary rd-btn--block" type="submit">Enviar pedido de pré-inscrição</button>
+        <p class="rd-form__legal">A pré-inscrição não garante a vaga. A inscrição só fica concluída depois do contacto com a nossa equipa.</p>
+      </form>
+
+      <div class="rd-form rd-form-success" id="rd-form-success" hidden aria-live="polite">
+        <div class="rd-form-success__icon">{{icon:check}}</div>
+        <h2>Pedido preparado.</h2>
+        <p>Obrigado pelo seu interesse no Empório do Saber. Para concluir o processo de inscrição, entre em contacto com a nossa equipa.</p>
+        <div class="rd-btn-row">
+          <a class="rd-btn rd-btn--wa" href="#" data-wa-summary target="_blank" rel="noopener">{{icon:whatsapp}} Enviar dados pelo WhatsApp</a>
+          <a class="rd-btn rd-btn--outline" href="tel:+244942783050">{{icon:phone}} Ligar</a>
+        </div>
+        <p style="font-size:.9rem;margin:20px auto 0">O botão do WhatsApp abre uma mensagem já preenchida com os dados do formulário. Só precisa de a enviar.</p>
+        <button type="button" class="rd-link-arrow" data-form-reset style="background:none;border:0;cursor:pointer;font-size:1rem;margin-top:8px">Preencher outra pré-inscrição</button>
+      </div>
+    </div>
+
+    <aside class="rd-aside-card rd-reveal" aria-label="Como funciona">
+      <h3>Como funciona</h3>
+      <ol>
+        <li>Preencha o formulário com os dados do aluno.</li>
+        <li>Envie os dados à escola pelo WhatsApp, com um toque.</li>
+        <li>A nossa equipa indica os passos para concluir a matrícula.</li>
+      </ol>
+      <p style="margin-bottom:6px"><strong style="color:#fff">Matrícula de alunos novos</strong></p>
+      <p style="margin:0 0 16px">50.000 Kz, ou <strong style="color:var(--rd-cor-amarelo)">45.000 Kz com código promocional</strong>.</p>
+      <p style="margin-bottom:6px"><strong style="color:#fff">Reconfirmação</strong></p>
+      <p style="margin:0 0 22px">45.000 Kz</p>
+      <a class="rd-btn rd-btn--yellow rd-btn--block" href="{{ROOT}}precario/">Ver preçário completo</a>
+      <p style="margin:20px 0 0;font-size:.9rem">Dúvidas? <a href="tel:+244942783050" style="color:#fff;font-weight:800">+244 942 783 050</a></p>
+    </aside>
+  </div>
+</section>

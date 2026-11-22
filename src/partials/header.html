@@ -1,0 +1,43 @@
+<a class="rd-skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<!-- COMPONENTE: Header -->
+<header class="rd-header"{{HEADER_SOLID}}>
+  <div class="rd-container rd-header__inner">
+    <a class="rd-brand" href="{{ROOT}}" aria-label="Empório do Saber, página inicial">
+      <img src="{{ROOT}}assets/img/logo.png" alt="Logótipo do Empório do Saber" width="54" height="54">
+      <span class="rd-brand__text">
+        <span class="rd-brand__name">EMPÓRIO DO SABER</span>
+        <span class="rd-brand__sub">Centro Infantil</span>
+      </span>
+    </a>
+    <nav class="rd-nav" aria-label="Navegação principal">
+      <ul>
+          {{NAV_DESKTOP}}
+      </ul>
+    </nav>
+    <a class="rd-btn rd-btn--primary rd-header__cta" href="{{ROOT}}pre-inscricao/">Fazer pré-inscrição</a>
+    <button class="rd-burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="rd-mobile-menu">{{icon:menu}}</button>
+  </div>
+</header>
+
+<!-- COMPONENTE: MobileMenu -->
+<div class="rd-mobile-menu" id="rd-mobile-menu" aria-hidden="true" role="dialog" aria-label="Menu">
+  <div class="rd-mobile-menu__top">
+    <a class="rd-brand" href="{{ROOT}}">
+      <img src="{{ROOT}}assets/img/logo.png" alt="" width="48" height="48">
+      <span class="rd-brand__text"><span class="rd-brand__name">EMPÓRIO DO SABER</span><span class="rd-brand__sub">Centro Infantil</span></span>
+    </a>
+    <button class="rd-mobile-menu__close" type="button" aria-label="Fechar menu">{{icon:close}}</button>
+  </div>
+  <nav aria-label="Navegação mobile">
+    <ul>
+          {{NAV_MOBILE}}
+          <li><a href="{{ROOT}}galeria/">Galeria</a></li>
+    </ul>
+  </nav>
+  <a class="rd-btn rd-btn--yellow rd-btn--block" href="{{ROOT}}pre-inscricao/">Fazer pré-inscrição</a>
+  <div class="rd-mobile-menu__info">
+    <p style="margin:22px 0 4px"><strong>+244 942 783 050</strong></p>
+    <p style="margin:0">Seg. a sex.: 08h00 às 15h00 · Sáb.: 08h00 às 12h00</p>
+  </div>
+</div>
